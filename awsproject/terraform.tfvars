@@ -1,0 +1,7 @@
+region = "us-east-1"
+solution = "ev_pilot"
+environment = "dev"
+eks_vpc_cidr = "10.0.0.0/16"
+default_vpc_id = "vpc-0025b7c0276374d99"
+default_public_subnet_id = "subnet-0ef33cb69e45b130b"
+db_password = "fcpilot0722"
