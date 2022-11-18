@@ -1,7 +1,0 @@
-region = "ap-southeast-1"
-solution = "ev_pilot"
-environment = "dev"
-eks_vpc_cidr = "172.31.0.0/16"
-default_vpc_id = "vpc-086f2e6a475f30dee"
-default_public_subnet_id = "subnet-0f7f5131d6614fabc"
-db_password = "fcpilot0722"
