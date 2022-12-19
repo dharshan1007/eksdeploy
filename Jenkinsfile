@@ -25,7 +25,7 @@ pipeline {
        stage ('docker image push to ECR') {
              steps {
                  withCredentials([string(credentialsId: 'aws_account_id', variable: 'Account_id')]){
-                     sh 'aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin $Account_id.dkr.ecr.us-east-1.amazonaws.com'
+                     sh 'aws ecr get-login-password --region ap-southeast-1 | sudo docker login --username AWS --password-stdin $Account_id.dkr.ecr.us-east-1.amazonaws.com'
                      sh 'sudo docker tag ev_pilot-dev-mqtt:latest $Account_id.dkr.ecr.us-east-1.amazonaws.com/ev_pilot-dev-mqtt:latest'
                      sh 'sudo docker push $Account_id.dkr.ecr.us-east-1.amazonaws.com/ev_pilot-dev-mqtt:latest'
                  }
