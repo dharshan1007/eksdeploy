@@ -51,7 +51,7 @@ spec:
       serviceAccountName: emqx
       containers:
       - name: emqx
-        image: 789755013245.dkr.ecr.us-east-1.amazonaws.com/ev_pilot-dev-mqtt:latest
+        image: 196117091547.dkr.ecr.us-east-1.amazonaws.com/ev_pilot-dev-mqtt:latest
         resources:
           requests:
             memory: "500Mi"
