@@ -9,11 +9,11 @@ pipeline {
                
             }
         }
-//         stage ('Build') {
-//             steps { 
-//                     sh 'mvn clean install -DskipTests=true '                                    
-//                }
-//          }
+         stage ('Build') {
+           steps { 
+                     sh 'mvn clean install -DskipTests=true '                                    
+               }
+          }
         
          stage ('docker image build') {
              steps {
