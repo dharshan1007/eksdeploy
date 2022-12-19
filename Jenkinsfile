@@ -15,12 +15,12 @@ pipeline {
                }
           }
         
-         stage ('docker image build') {
+         /*stage ('docker image build') {
              steps {
                  sh 'sudo docker build ./ -t ev_pilot-dev-mqtt:latest '           
              }    
                     
-        }
+        }*/
        
        stage ('docker image push to ECR') {
              steps {
